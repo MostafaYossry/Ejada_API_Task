@@ -1,0 +1,46 @@
+Hello I'm Mostafa Alsaddek 
+-------------
+-------------
+In this project, I use Eclipse, Java, Cucumber, and JUnit runner.
+I develop this framework using RestAssured
+
+I make 1 long scenario to use all APIs
+
+ProjectName(API_Tests)/
+│
+├── src/
+│   ├── main/
+│   │   ── java/
+│   │      └── config/  		    <-- Contain configuration file (BaseURL and token)
+│   │      └── methods/             <-- Contains all API methods (Get - Post - Patch - Delete) also some assertion
+│   │      └── stepDefin/           <-- Contains step definition file classes
+│   │   
+│   └── test/
+│       └── java/
+│           └── feature/      		<-- Contains cucumber feature files
+│           └── runner/         	<-- Contains Junit runner file
+├── target/
+│   ├── cucumber-reports/         	<-- Contains Report after running the Test 
+│
+├── pom.xml (for dependencies)
+└── README
+
+You can get the feature file in (src/test/java/features/API.feature)
+	
+I create a configuration file that contains the BaseURL and the user Token.
+
+As this is a Cucumber I create the step definition file in sdFiles package (src/main/java/stepDefin) that contains the actions for each command in the feature file.
+
+I use a local report after each run in HTML, you can find the test report in (target\cucumber-reports\cucumber-html-report.html)
+========================================================================
+
+To run this application you need to import the project to Eclipse then Go to the Runner file (src/test/java/runner/RunnerAPI.java) then run as "JUnit Test"
+-------------------------------
+Note: I use Windows and Eclipse IDE for Java Developers Version: 2024-09 (4.33.0)
+
+-------------------------------
+-------------
+-------------
+Mostafa Alsaddek
++201027062028
+mos.yossry.cufe@gmail.com
